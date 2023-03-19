@@ -1,0 +1,377 @@
+body {
+  background-size: 100%;
+  background-image: url("/IMG/Southout/南方澳bg.png");
+  scroll-behavior:smooth;
+}
+
+/*---------------背景---------------*/
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -999;
+  object-fit: cover;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-width: 3px;
+  border-style: solid;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+}
+
+/*---------------最上面那一塊---------------*/
+#top {
+  height: 60vw;
+}
+
+#logo {
+  height: 5vh;
+  width: 10vw;
+  position: relative;
+  top: 5vh;
+  left: 85vw;
+}
+#logo img{
+  width: 9%;
+}
+
+/*---------------地圖---------------*/
+#map {
+  height: 135vw;
+  position: relative;
+}
+
+#location1 {
+  position: absolute;
+  top: 35.9%;
+  right: 8%;
+  height: 10%;
+  width: 10%;
+}
+
+#location2 {
+  position: absolute;
+  bottom: 28%;
+  right: 20%;
+  height: 10%;
+  width: 10%;
+}
+
+#location3 {
+  position: absolute;
+  bottom: 45%;
+  right: 20%;
+  height: 10%;
+  width: 10%;
+}
+
+#location4 {
+  position: absolute;
+  top: 30%;
+  right: 35%;
+  height: 10%;
+  width: 10%;
+}
+
+#location5 {
+  position: absolute;
+  bottom: 29%;
+  right: 35%;
+  height: 10%;
+  width: 10%;
+}
+
+#location1>svg>g {
+  transform: scale(3.5) translate(-35%, -30%);
+}
+
+#location2>svg>g {
+  transform: scale(3.5) translate(-35%, -30%);
+}
+
+#location3>svg>g {
+  transform: scale(3.5) translate(-35%, -30%);
+}
+
+#location4>svg>g {
+  transform: scale(3.5) translate(-35%, -30%);
+}
+
+#location5>svg>g {
+  transform: scale(3.5) translate(-35%, -30%);
+}
+
+.loc_txt {
+  height: 5%;
+  width: 16%;
+  position: absolute;
+  display: none;
+}
+
+/*---------------介紹---------------*/
+#introduce {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 40vw;
+}
+
+#introduce_literal {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 鯖魚 */
+#btnfish {
+  width: 20%;
+  top: 2%;
+  left: 32%;
+}
+
+#btnfish>svg {
+  overflow: visible;
+}
+
+#btnfish>svg>g {
+  transform: scale(3.0) translate(5%, -75%);
+}
+
+#introduce_img {
+  overflow: visible;
+  width: 40%;
+  height: 100%;
+}
+
+#peoplefish {
+  position: relative;
+  height: 100%;
+  z-index: -1;
+}
+
+#peoplefish svg {
+  overflow: visible;
+  z-index: -1;
+}
+
+#peoplefish>svg>g {
+  transform: scale(5) translate(-45%, -35%);
+  z-index: -1;
+}
+
+/*---------------影片---------------*/
+#video{
+  position:relative;
+}
+#video_video video{
+  position:relative;
+  padding: 10vw 0;
+  width: 80%;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.videoBtn{
+  position: absolute;
+  padding: 10vw 0;
+  width: 80%;
+  left:50%;
+  bottom:0;
+  transform: translateX(-50%);
+  display:none;
+  z-index: 1;
+}
+.vbtn{
+  position: relative;
+  display:inline;
+  float:left;
+  width:50%;
+  cursor: pointer;
+}
+.vbtn > svg > g{
+  transform: scale(0.6) translate(30%,55%);
+}
+
+#hand{
+  position: absolute;
+  height: 13% ;
+  width: 10%;
+  z-index: 2;
+  display: none;
+}
+
+#hand:hover{
+  cursor: pointer;
+}
+
+/*---------------幻燈片---------------*/
+.slideshow{
+  display: flex;
+  justify-content: center; 
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.slideshow section{
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+}
+.slide_dot{
+  width: 80px;
+}
+.dots{
+  position: relative;
+  top:50%;
+  left: 60%;
+  transform: translateY(-70%);
+}
+.dot1, .dot2, .dot3, .dot4, .dot5{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 20% 0;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+.dot1:first-child, .dot2:first-child, .dot3:first-child, .dot4:first-child, .dot5:first-child{
+  background: rgba(255, 255, 255, 1);
+}
+.scroll-div{
+  position: relative;
+  overflow: hidden;
+}
+.scroll-div-view{
+  position: absolute;
+  top:0;
+  /*display: inline-block;*/
+  width: 65vw;
+  height: 40vw;
+  overflow-y: scroll;
+  z-index: 1;
+}
+.direction{
+  position: relative;
+  top:0;
+  width: 65vw;
+  height: 40vw;
+  margin-right: -17px;
+  z-index: 2;
+}
+.direction img {
+  width: 100%;
+  visibility:hidden;
+}
+.direction:hover img{
+  visibility:visible;
+}
+.scroll-div-view img{
+  width: 100%;
+}
+.scroll-div-y{
+  overflow: hidden;
+  width: 80px; 
+  height: 40vw;
+}
+.scroll-div-y-line{
+    position: relative;
+    width: 3px; 
+    height: 90%;
+    background-color: rgb(108, 108, 108);
+    left:50%;
+    border-radius: 10px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.scroll-div-y-bar{
+  position: relative;
+  width: 3vw;
+  height:3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.bar{
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.bar-1{
+  background-color: rgba(254, 231, 115);
+  box-shadow: 0 0 10px 5px rgba(254, 231, 115);
+  z-index: -98;
+}
+.bar-2{
+  background-color: rgb(254, 115, 115,0);
+  box-shadow: 0 0 10px 5px rgba(254, 115, 115,0);
+  z-index: -99;
+  /*
+  白天(254,231,115)
+  傍晚(255,101,89)
+  晚上(249,149,23)
+  */
+}
+
+
+/*-------bobobo------*/
+.bobobo {
+  position: absolute;
+  z-index: 5;;
+  /* background-color: rgb(8, 211, 211); */
+  height: 2%;
+  width: 23%;
+}
+
+.bobobo>svg{
+  overflow: visible;
+}
+
+.bobobo>svg>g {
+  transform: scale(2) translate(-20%, -35%);
+}
+
+#bobobo1 {
+  right: 10%;
+  bottom: 42.5%;
+}
+
+#bobobo2 {
+  left: 4%;
+  transform: rotateY(180deg);
+  bottom: 33%;
+}
+
+#bobobo3 {
+  left: 0%;
+  transform: rotateY(180deg);
+  bottom: 24.5%;
+}
+
+#bobobo4 {
+  right: 17%;
+  bottom: 16.3%;
+}
+#bobobo5 {
+  right: 70%;
+  transform: rotateY(180deg);
+  bottom: 7.5%;
+}
+
+.bobobo:hover {
+  cursor: url('/IMG/Southout/mouse1.png'), grabbing !important;
+  /* cursor: grabbing; */
+}

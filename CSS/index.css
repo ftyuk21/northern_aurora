@@ -1,0 +1,116 @@
+#main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border-width: 3px;
+    border-style: solid; */
+    /* height: 100%;
+    width: 100%; */
+    background-color:rgb(255,255,255);
+    overflow: hidden;
+    /* overflow: scroll; */
+}
+
+/**/
+#animContainer{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(255,255,240);
+}
+#container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color:rgb(117, 237, 5); */
+    /* object-fit: cover;
+    object-position: left top; */
+}
+
+#container> svg > g{
+    transform:scale(0.5) translate(50%,50%);
+}
+
+#videoContainer{
+    position: relative;
+    height: 100vh;
+    width: 100vw; 
+}
+#video{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    transform: scale(1.16) translate(0%,1.5%);
+}
+
+#container2{
+    position: relative;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    object-position: left top;
+}
+
+#container2 > svg > g{ 
+    display: flex; 
+    width: 150%; 
+     transform: scale(1.2) translate(-6.55%,-12%);
+}
+
+
+#clickContainer{
+    /* background-color:rgb(116, 13, 218);  */
+    position: absolute;
+    height:10vh;
+    width: 20vw;
+    bottom: 5vh;
+    left: 40vw;
+    z-index:2;
+    display: flex;
+
+}
+#tai{
+    display: none;
+    position: absolute;
+    height: 30%;
+    width: 13%;
+    top: 30%;
+    left: 18%;
+    /* text-decoration:none; */
+}
+#tai:hover{
+    cursor: url('/IMG/Taiping/mouse_Tai.png'), grabbing !important;
+}
+
+#sout{
+    display: none;
+    position: absolute;
+    height: 30%;
+    width: 13%;
+    top: 30%;
+    right: 35%;
+    /* text-decoration:none; */
+}
+#sout:hover{
+    cursor: url('/IMG/Southout/mouse1.png'), grabbing !important;
+}
+
+/*html拆解後 找到這個  這是svg的長方形畫布 做法是把畫布拉到超大 這樣不管什麼樣子的電腦都可以適配*/
+/* #__lottie_element_2 rect{
+    width: 1000vw;
+    height: 1000vh;
+    x: -500;
+    y: -500;
+}
+
+#__lottie_element_146 rect{
+    width: 190vw;
+    height: 100%;
+    x:-45vw;
+} */

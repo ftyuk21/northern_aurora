@@ -1,0 +1,370 @@
+body {
+  background-size: 100%;
+  background-image: url("/IMG/Taiping/太平山bg.png");
+  scroll-behavior: smooth;
+}
+
+/*---------------背景---------------*/
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -999;
+  object-fit: cover;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-width: 3px;
+  border-style: solid;
+  overflow: hidden;
+}
+
+.content {
+  width: 100%;
+}
+
+/*---------------最上面那一塊---------------*/
+#top {
+  height: 60vw;
+}
+
+#logo {
+  position: relative;
+  top: 5vh;
+  left: 85vw;
+}
+
+#logo img {
+  width: 9%;
+}
+
+/*---------------地圖---------------*/
+#map {
+  height: 60vw;
+  position: relative;
+}
+
+.loc {
+  /* background-color: aliceblue; */
+  position: absolute;
+  height: 20%;
+  width: 9%;
+  z-index: 3;
+}
+
+#loc1 {
+  /* background-color: blue; */
+  top: 55%;
+  left: 27.5%;
+}
+
+#loc2 {
+  /* background-color: white; */
+  top: 40%;
+  right: 45%;
+}
+
+#loc3 {
+  /* background-color: rgb(0, 255, 136); */
+  bottom: 23%;
+  right: 40%;
+}
+
+#loc4 {
+  /* background-color: rgb(255, 0, 0); */
+  bottom: 10%;
+  right: 36%;
+}
+
+#loc5 {
+  /* background-color: rgb(255, 0, 208); */
+  top: 32%;
+  right: 15%;
+}
+
+.loc>svg>g {
+  transform: scale(3.5) translate(-35%, -30%);
+}
+
+.loc_txt {
+  position: absolute;
+  visibility: hidden;
+  z-index: 2;
+}
+
+/*---------------介紹---------------*/
+#introduce {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  height: 150vh;
+}
+
+#introduce_img {
+  display: flex;
+  overflow: visible;
+  height: 100%;
+  width: 60%;
+}
+
+#people {
+  height: 100%;
+  width: 100%;
+}
+
+#people>svg {
+  overflow: visible;
+}
+
+#people>svg>g {
+  transform: scale(2.7) translate(0%, -34%);
+}
+
+#owl {
+  position: absolute;
+  height: 7%;
+  width: 20%;
+  left: 34%;
+  z-index: 1;
+}
+
+#owl>svg {
+  overflow: visible;
+}
+
+#owl>svg>g {
+  transform: scale(3.8) translate(-38%, -16%)
+}
+
+#owlIntro {
+  position: absolute;
+  height: 2%;
+  width: 23%;
+  left: 39%;
+  top: 24%;
+  overflow: visible;
+}
+
+#owlIntro>svg {
+  overflow: visible;
+}
+
+#owlIntro>svg>g {
+  transform: scale(1.5) translate(-25%, -15%);
+}
+
+#introduce_literal {
+  right: 0;
+  width: 200vw;
+}
+
+#introduce_literal img {
+  width: 100%;
+}
+
+/*---------------影片---------------*/
+
+#video {
+  position: relative;
+}
+
+#video_video video {
+  position: relative;
+  padding: 10vw 0;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+.videoBtn {
+  position: absolute;
+  padding: 10vw 0;
+  width: 80%;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 1;
+}
+
+.vbtn {
+  position: relative;
+  display: inline;
+  float: left;
+  width: 50%;
+  cursor: pointer;
+}
+
+#hand {
+  position: absolute;
+  height: 13%;
+  width: 10%;
+  z-index: 2;
+  display: none;
+}
+
+#hand:hover {
+  cursor: pointer;
+}
+
+/*---------------幻燈片---------------*/
+.slideshow {
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+.slideshow section {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+}
+
+.slide_dot {
+  width: 80px;
+}
+
+.dots {
+  position: relative;
+  top: 50%;
+  left: 60%;
+  transform: translateY(-70%);
+}
+
+.dot1,
+.dot2,
+.dot3,
+.dot4,
+.dot5 {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 20% 0;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+.dot1:first-child,
+.dot2:first-child,
+.dot3:first-child,
+.dot4:first-child,
+.dot5:first-child {
+  background: rgba(255, 255, 255, 1);
+}
+
+/*------------開始------------*/
+.scroll-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-div-view {
+  position: absolute;
+  top: 0;
+  /*display: inline-block;*/
+  width: 65vw;
+  height: 40vw;
+  overflow-y: scroll;
+  z-index: 1;
+}
+
+.direction {
+  position: relative;
+  top: 0;
+  width: 65vw;
+  height: 40vw;
+  margin-right: -17px;
+  z-index: 2;
+}
+
+.direction img {
+  width: 100%;
+  visibility: hidden;
+}
+
+.direction:hover img {
+  visibility: visible;
+}
+
+/*------------結束------------*/
+.scroll-div-view img {
+  width: 100%;
+}
+
+.scroll-div-y {
+  overflow: hidden;
+  width: 80px;
+  height: 40vw;
+}
+
+.scroll-div-y-line {
+  position: relative;
+  width: 3px;
+  height: 90%;
+  background-color: rgb(108, 108, 108);
+  left: 50%;
+  border-radius: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-div-y-bar {
+  position: relative;
+  width: 3vw;
+  height: 3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.bar-1 {
+  background-color: rgba(254, 231, 115);
+  box-shadow: 0 0 10px 5px rgba(254, 231, 115);
+  z-index: -98;
+}
+
+.bar-2 {
+  background-color: rgb(254, 115, 115, 0);
+  box-shadow: 0 0 10px 5px rgba(254, 115, 115, 0);
+  z-index: -99;
+  /*
+  白天(254,231,115)
+  傍晚(255,101,89)
+  晚上(249,149,23)
+  */
+}
+
+/*-------trees------*/
+.tree {
+  position: absolute;
+  width: 20%;
+}
+
+.tree:hover {
+  cursor: url('/IMG/Taiping/mouse_Tai.png'), grabbing !important;
+}
+
+#tree2,
+#tree3,
+#tree5 {
+  right: -5%;
+}

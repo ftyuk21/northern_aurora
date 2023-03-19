@@ -1,0 +1,196 @@
+body {
+  background-size: 100%;
+  background-image: url("/IMG/HisSouthout/南方澳歷史bg.png");
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* border-width: 3px;
+  border-style: solid; */
+  overflow: hidden;
+}
+.content {
+  width: 100%;
+}
+
+#logo {
+  height: 5vh;
+  width: 10vw;
+  position: relative;
+  top: 5vh;
+  left: 85vw;
+}
+#logo img{
+  width: 9%;
+}
+
+/*----------------最上面-----------*/
+#top{
+  /* border-width: 3px; border-style: dashed;border-color: rgb(225, 13, 13);  切版用 */
+  position: relative;
+  height: 60vw;
+  overflow: visible;
+}
+
+/*------------------------船------------------*/
+#boat{
+  /* border-width: 3px; border-style: dashed;border-color: blue;  切版用 */
+  height: 50%;
+  width: 65%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  overflow: visible;
+}
+
+#boat svg{
+  overflow: visible;
+}
+
+#boat>svg>g{
+  transform: scale(1.5) translate(-10%, -15%);
+}
+
+/*---------魚群------------*/
+#fish{
+  /* border-width: 3px; border-style: dashed;border-color: rgb(136, 0, 255);  切版用 */
+  position: relative;
+  height: 55vw;
+  overflow: visible;
+  z-index: 1;
+}
+#fish svg{
+  overflow: visible;
+}
+
+#fish>svg>g{
+  transform: scale(1.25) translate(-9%, -10%);
+}
+
+.fish{
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  z-index: 3;
+}
+.fish:hover{
+  cursor: help;
+}
+
+
+#fish1{
+  /* background-color: azure; */
+  top: 26%;
+  width: 20vw;
+}
+#fish1-1{
+  /* background-color: azure; */
+  right: 0%;
+}
+#fish2{
+  /* background-color: rgb(0, 238, 238); */
+  right: 0%;
+  top:23%
+}
+#fish3{
+  /* background-color: rgb(245, 226, 21); */
+  left: 9%;
+  width: 15vw;
+}
+#fish3-1{
+  /* background-color: rgb(245, 226, 21); */
+  top: 42%;
+  right: 0%;
+  width: 18vw;
+}
+#fish4{
+  /* background-color: rgb(0, 0, 0); */
+  top: 46%; 
+  left: 42%;
+  height: 19vh;
+  width: 20vw;
+}
+#fish5{
+  /* background-color: rgb(255, 0, 0); */
+  bottom: 17%;
+  left: 35%;
+}
+
+#fish5-1{
+  /* background-color: rgb(255, 0, 0); */
+  bottom: 0%;
+  right: 8%;
+  width: 12vw;
+}
+
+
+.fishInfo{
+  position: absolute;
+  width: 50vw;
+  height: 50vh;
+  z-index: 2;
+}
+
+#fishInfo1{
+  /* background-color:black; */
+}
+#fishInfo1>svg>g{
+  transform: scale(1.5) translate(-40%, -37%);
+}
+
+#fishInfo2{
+  /* background-color:rgb(226, 77, 77); */
+}
+#fishInfo2>svg>g{
+  transform: scale(1.5) translate(55%, -45%);
+}
+
+#fishInfo3{
+  /* background-color:rgb(242, 255, 0); */
+}
+#fishInfo3>svg>g{
+  transform: scale(1.5) translate(55%, -15%);
+}
+
+#fishInfo4{
+  /* background-color:rgb(132, 255, 0); */
+}
+#fishInfo4>svg>g{
+  transform: scale(1.5) translate(5%, -10%);
+}
+
+#fishInfo5{
+  /* background-color:rgb(21, 0, 255); */
+  bottom: 10%;
+}
+#fishInfo5>svg>g{
+  transform: scale(1.5) translate(-10%, -46%);
+}
+
+/*-----人群----------*/
+#people{
+  /* border-width: 3px; border-style: dashed;border-color: rgb(255, 0, 0);  切版用 */
+  overflow: visible;
+  height: 68vw;
+}
+#people svg{
+  overflow: visible;
+}
+#people>svg>g{
+  transform: scale(1.8) translate(-30%,-14%);
+}
+/*------城市---------*/
+#city{
+  /* border-width: 3px; border-style: dashed;border-color: rgb(0, 255, 102);  切版用 */
+  overflow: visible;
+  height: 60vw;
+}
+#city svg{
+  overflow: visible;
+}
+#city>svg>g{
+  transform: scale(1.15) translate(-6.5%,10%);
+}

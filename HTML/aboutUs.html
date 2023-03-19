@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於我們</title>
+
+    <!-- 圖標 -->
+    <link rel="shortcut icon" href="/IMG/logo.png" type="image/x-icon">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/menu.css">
+
+    <style>
+        #logo {
+            height: 5vh;
+            width: 10vw;
+            position: absolute;
+            top: 5vh;
+            left: 85vw;
+            z-index: 2;
+        }
+
+        #logo img {
+            width: 120%;
+        }
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+    <a id="logo" href="index.html"><img src="/IMG/日出北橫.png" alt=""></a>
+    <img src="/IMG/aboutUs/aboutUs.jpg" alt="" style="width:100vw; overflow:hidden; position:relative;">
+    <div class="menuContainer"></div>
+
+
+    <script>
+        $(".menuContainer").load("menu.html");
+    </script>
+    <script src="/JS/Music_loading.js"></script>
+    <script src="/JS/menu.js"></script>
+</body>
+
+</html>
